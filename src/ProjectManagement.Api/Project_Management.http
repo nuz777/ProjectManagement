@@ -1,0 +1,45 @@
+@HostAddress = http://localhost:5013
+
+### Crear proyecto
+POST {{HostAddress}}/api/v1/proyectos
+Content-Type: application/json
+
+{
+  "nombre": "Proyecto ejemplo",
+  "descripcion": "Descripción del proyecto",
+  "fechaInicio": "2026-11-24T00:00:00Z",
+  "fechaFin": "2026-12-31T00:00:00Z"
+}
+
+### Listar proyectos
+GET {{HostAddress}}/api/v1/proyectos
+
+### Crear tarea
+POST {{HostAddress}}/api/v1/tareas
+Content-Type: application/json
+
+{
+  "titulo": "Tarea ejemplo",
+  "descripcion": "Descripción de la tarea",
+  "estado": "Pendiente",
+  "prioridad": "Alta",
+  "fechaLimite": "2026-12-15T00:00:00Z",
+  "proyectoId": 1
+}
+
+### Listar tareas filtradas
+GET {{HostAddress}}/api/v1/tareas?estado=Pendiente&prioridad=Alta
+
+### Tareas vencidas
+GET {{HostAddress}}/api/v1/tareas/vencidas
+
+### Cambiar estado de una tarea
+PATCH {{HostAddress}}/api/v1/tareas/1/estado
+Content-Type: application/json
+
+{
+  "estado": "Completada"
+}
+
+### Avance de un proyecto
+GET {{HostAddress}}/api/v1/proyectos/1/avance
