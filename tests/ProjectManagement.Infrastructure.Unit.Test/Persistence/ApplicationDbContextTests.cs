@@ -4,7 +4,7 @@ using Project_Management.Domain.Entities;
 using Project_Management.Domain.Enums;
 using Project_Management.Infrastructure.Persistence;
 
-namespace ProjectManagement.Infrastructure.Tests.Persistence;
+namespace ProjectManagement.Infrastructure.Unit.Test.Persistence;
 
 public sealed class ApplicationDbContextTests
 {

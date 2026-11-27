@@ -2,7 +2,7 @@ using Microsoft.EntityFrameworkCore;
 using Project_Management.Application.Abstractions;
 using Project_Management.Domain.Entities;
 
-namespace ProjectManagement.Application.Tests.TestDoubles;
+namespace ProjectManagement.Application.Unit.Test.TestDoubles;
 
 internal sealed class TestApplicationDbContext(DbContextOptions<TestApplicationDbContext> options)
     : DbContext(options), IApplicationDbContext

@@ -1,7 +1,7 @@
 using Project_Management.Domain.Entities;
 using Project_Management.Domain.Enums;
 
-namespace ProjectManagement.Domain.Tests.Entities;
+namespace ProjectManagement.Domain.Unit.Test.Entities;
 
 public sealed class TareaTests
 {

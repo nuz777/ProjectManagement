@@ -1,11 +1,11 @@
 using Project_Management.Application.DTOs;
 using Project_Management.Application.Services;
-using ProjectManagement.Application.Tests.TestDoubles;
+using ProjectManagement.Application.Unit.Test.TestDoubles;
 using Project_Management.Domain.Entities;
 using Project_Management.Domain.Enums;
 using Project_Management.Domain.Exceptions;
 
-namespace ProjectManagement.Application.Tests.Services;
+namespace ProjectManagement.Application.Unit.Test.Services;
 
 public sealed class ProyectoServiceTests
 {

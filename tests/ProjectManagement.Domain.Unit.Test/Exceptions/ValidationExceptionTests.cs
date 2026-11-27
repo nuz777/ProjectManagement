@@ -1,6 +1,6 @@
 using Project_Management.Domain.Exceptions;
 
-namespace ProjectManagement.Domain.Tests.Exceptions;
+namespace ProjectManagement.Domain.Unit.Test.Exceptions;
 
 public sealed class ValidationExceptionTests
 {

@@ -1,6 +1,6 @@
 using Project_Management.Domain.Entities;
 
-namespace ProjectManagement.Domain.Tests.Entities;
+namespace ProjectManagement.Domain.Unit.Test.Entities;
 
 public sealed class ProyectoTests
 {

@@ -6,9 +6,10 @@
     <Project Path="src\ProjectManagement.Infrastructure\ProjectManagement.Infrastructure.csproj" />
   </Folder>
   <Folder Name="/tests/">
-    <Project Path="tests/ProjectManagement.Api.Tests/ProjectManagement.Api.Tests.csproj" />
-    <Project Path="tests/ProjectManagement.Application.Tests/ProjectManagement.Application.Tests.csproj" />
-    <Project Path="tests/ProjectManagement.Domain.Tests/ProjectManagement.Domain.Tests.csproj" />
-    <Project Path="tests/ProjectManagement.Infrastructure.Tests/ProjectManagement.Infrastructure.Tests.csproj" />
+    <Project Path="tests/ProjectManagement.Api.IntegrationTests/ProjectManagement.Api.IntegrationTests.csproj" />
+    <Project Path="tests/ProjectManagement.Api.Unit.Test/ProjectManagement.Api.Unit.Test.csproj" />
+    <Project Path="tests/ProjectManagement.Application.Unit.Test/ProjectManagement.Application.Unit.Test.csproj" />
+    <Project Path="tests/ProjectManagement.Domain.Unit.Test/ProjectManagement.Domain.Unit.Test.csproj" />
+    <Project Path="tests/ProjectManagement.Infrastructure.Unit.Test/ProjectManagement.Infrastructure.Unit.Test.csproj" />
   </Folder>
 </Solution>

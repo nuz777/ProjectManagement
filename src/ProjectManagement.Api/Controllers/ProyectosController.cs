@@ -52,7 +52,7 @@ public sealed class ProyectosController(IProyectoService proyectoService) : Cont
     /// <response code="201">Proyecto creado correctamente.</response>
     /// <response code="400">Los datos enviados no son válidos.</response>
     [HttpPost]
-    [ProducesResponseType(typeof(ProyectoResponse), StatusCodes.Status201Created)]
+    [ProducesResponseType(typeof(ProyectoResponse), StatusCodes.Status201Created)] // Recurso creado correctamente 
     [ProducesResponseType(StatusCodes.Status400BadRequest)]
     public async Task<ActionResult<ProyectoResponse>> Create(
         [FromBody] ProyectoRequest request,
@@ -94,9 +94,9 @@ public sealed class ProyectosController(IProyectoService proyectoService) : Cont
     /// <response code="404">No existe un proyecto con ese identificador.</response>
     /// <response code="409">El proyecto tiene tareas pendientes o en progreso.</response>
     [HttpDelete("{id:int}")]
-    [ProducesResponseType(StatusCodes.Status204NoContent)]
+    [ProducesResponseType(StatusCodes.Status204NoContent)] // Respuesta enviada sin contenido 
     [ProducesResponseType(StatusCodes.Status404NotFound)]
-    [ProducesResponseType(StatusCodes.Status409Conflict)]
+    [ProducesResponseType(StatusCodes.Status409Conflict)] // Hay conflictos, (tareas pendientes) 
     public async Task<IActionResult> Delete(
         [FromRoute] int id,
         CancellationToken cancellationToken)

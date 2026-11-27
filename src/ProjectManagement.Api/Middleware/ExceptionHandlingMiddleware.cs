@@ -27,7 +27,7 @@ public sealed class ExceptionHandlingMiddleware(
 
     private async Task HandleExceptionAsync(HttpContext context, Exception exception)
     {
-        var statusCode = StatusCodes.Status500InternalServerError;
+        var statusCode = StatusCodes.Status500InternalServerError; // Error inesperado 
         var title = "Error interno del servidor";
         var detail = "Ocurrió un error inesperado. Inténtelo de nuevo más tarde.";
         IReadOnlyDictionary<string, string[]>? errors = null;
@@ -35,7 +35,7 @@ public sealed class ExceptionHandlingMiddleware(
         switch (exception)
         {
             case NotFoundException notFoundException:
-                statusCode = StatusCodes.Status404NotFound;
+                statusCode = StatusCodes.Status404NotFound;  // Recurso/item no encontrado 
                 title = "Recurso no encontrado";
                 detail = notFoundException.Message;
                 logger.LogWarning(notFoundException, "Recurso no encontrado: {Message}", notFoundException.Message);
@@ -49,7 +49,7 @@ public sealed class ExceptionHandlingMiddleware(
                 break;
 
             case ValidationException validationException:
-                statusCode = StatusCodes.Status400BadRequest;
+                statusCode = StatusCodes.Status400BadRequest; //  Validacion Inconrrecta 
                 title = "Validación incorrecta";
                 detail = validationException.Message;
                 errors = validationException.Errors;

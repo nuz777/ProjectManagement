@@ -4,7 +4,7 @@ using Project_Management.Application.DTOs;
 using Project_Management.Application.Services;
 using Project_Management.Domain.Enums;
 
-namespace ProjectManagement.Api.Tests.Controllers;
+namespace ProjectManagement.Api.Unit.Test.Controllers;
 
 public sealed class TareasControllerTests
 {

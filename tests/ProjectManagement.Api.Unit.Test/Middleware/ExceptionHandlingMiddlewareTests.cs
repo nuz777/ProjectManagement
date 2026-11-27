@@ -5,7 +5,7 @@ using Microsoft.Extensions.Logging.Abstractions;
 using Project_Management.Api.Middleware;
 using Project_Management.Domain.Exceptions;
 
-namespace ProjectManagement.Api.Tests.Middleware;
+namespace ProjectManagement.Api.Unit.Test.Middleware;
 
 public sealed class ExceptionHandlingMiddlewareTests
 {

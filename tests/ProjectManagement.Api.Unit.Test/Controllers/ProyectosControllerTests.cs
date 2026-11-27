@@ -3,7 +3,7 @@ using Project_Management.Api.Controllers;
 using Project_Management.Application.DTOs;
 using Project_Management.Application.Services;
 
-namespace ProjectManagement.Api.Tests.Controllers;
+namespace ProjectManagement.Api.Unit.Test.Controllers;
 
 public sealed class ProyectosControllerTests
 {
